@@ -1,0 +1,289 @@
+/* App.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5a623, #ff6347, #6a5acd);
+  background-size: 200% 200%;
+  animation: gradientAnimation 10s ease infinite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  position: absolute;
+  top: 5px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #f5a623;
+}
+
+/* Main Content Section */
+.content-section {
+  width: 100%;
+  max-width: 800px;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Simple Box */
+.simple-box {
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  color: black;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  text-align: left;
+  margin-bottom: 1.5rem;
+  position: relative;
+  top: 100px;
+  left: 300px;
+}
+.Links {
+  width: 100%;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Adds a blur effect */
+  border-radius: 8px;
+  color: black;
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: left;
+  margin: 20px 0; /* Adds margin for spacing between components */
+  position: relative;
+  bottom: 300px;
+  right: 341px;
+}
+.primarybtn{
+  background-color: #008CBA;
+  width: 100px;
+  height: 30px;
+  margin: 5px;
+  border-radius: 10px ;
+  font-size: medium;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  
+}
+.secondarybtn{
+  background-color: #008CBA;
+  width: 100px;
+  height: 30px;
+  margin: 5px;
+  border-radius: 10px ;
+  
+}
+/* About Section */
+#about {
+  width: 100%;
+  max-width: 1000px;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Adds a blur effect */
+  border-radius: 8px;
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-top: 2rem; 
+}
+
+#about h2 {
+  font-size: 2rem;
+  color: black;
+  font-weight: bolder;
+  margin-bottom: 1rem;
+}
+
+#about p {
+  font-size: 1.1rem;
+  color: #ddd; /* Light gray text for paragraph */
+  line-height: 1.6;
+}
+#skills {
+  padding: 3rem;
+  background: rgba(255, 255, 255, 0.1); /* Matches navbar and about section background */
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 2rem auto;
+  color: black;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bolder;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.skill-item {
+  padding: 0.5rem 1rem;
+  background: #6a5acd;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+  animation: moveSkill 1s ease-in-out infinite;
+  transition: transform 1s ease;
+}
+
+.skill-item:hover {
+  background-color: #f5a623;
+  transform: translateY(10px); /* Slight shift on hover */
+  border-color: #6a5acd;
+  border-radius: 100px  ;
+}
+
+@keyframes moveSkill {
+  0% { transform: translateX(-8px); }
+  50% { transform: translateY(10px); }
+  100% { transform: translateX(-8px); }
+}
+/* App.css */
+
+/* Education Section */
+.education-section {
+  width: 1000px;
+  max-width: 2000px;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.education-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: black; /* Highlight color */
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.education-entry {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  color: #e0e0e0;
+  transition: transform 0.3s ease;
+}
+
+.education-entry:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.education-entry h3 {
+  font-size: 1.5rem;
+  color: black;
+  font-size: 40px;
+}
+
+.education-entry p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+/* App.css */
+
+/* Projects Section */
+.projects-section {
+  width: 100%;
+  /* max-width: 800px; */
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  color: white;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.projects-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.projects-list li {
+  margin-bottom: 1.5rem;
+}
+
+.projects-list h3 {
+  margin-bottom: 0.5rem;
+  color: #f5a623; /* Color for project titles */
+}
