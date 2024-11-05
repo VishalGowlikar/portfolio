@@ -19,6 +19,11 @@ jobs:
       - name: Disable CI error on warnings
         run: unset CI
 
+      - name: Set up Git user
+        run: |
+          git config --global user.name "VishalGowlikar"
+          git config --global user.email "vishalkishnn18886@gmail.com"
+
       - name: Build project
         run: npm run build
 
