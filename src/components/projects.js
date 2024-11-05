@@ -14,7 +14,7 @@ function Projects() {
         description: 'Me and my team built an 
         AI-powered financial mobile application. I developed APIs using Express, TypeScript, 
         OpenAI, AWS, and MongoDB. Used OTP via AWS SES, Google, and Facebook for the authentication system. 
-        Built AI assistants using OpenAI\'s latest model and trained them with our dataset. 
+        Built AI assistants using OpenAI's latest model and trained them with our dataset. 
         Voice messages are converted to text using AWS Transcribe. The app fetches data from Google Sheets and generates a PDF term sheet, sent via AWS SES.',
     },
     {
