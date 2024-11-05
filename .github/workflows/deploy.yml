@@ -3,8 +3,8 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - master  # Or your default branch
-      
+      - master
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -12,21 +12,17 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-        with:
-          persist-credentials: false
-          
-      - name: Set up Git config
-        run: |
-          git config user.name VishalGowlikar
-          git config user.email vishalkishnn18886@gmail.com
-          
+
       - name: Install dependencies
         run: npm install
+
+      - name: Disable CI error on warnings
+        run: unset CI
 
       - name: Build project
         run: npm run build
 
       - name: Deploy to GitHub Pages
-        run: npm run deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npm run deploy
