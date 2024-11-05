@@ -22,14 +22,11 @@ jobs:
           
       - name: Install dependencies
         run: npm install
-        working-directory: ./portfolio
 
       - name: Build project
         run: npm run build
-        working-directory: ./portfolio
 
       - name: Deploy to GitHub Pages
         run: npm run deploy
-        working-directory: ./portfolio
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
