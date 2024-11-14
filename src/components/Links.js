@@ -4,11 +4,9 @@ import { FaDownload, FaGithub, FaLinkedin } from 'react-icons/fa'; // Import ico
 function Links() {
     return (
         <div className="Links" style={{ textAlign: 'center', padding: '20px', background: 'rgba(255, 255, 255, 0.1)', backdropFilter: 'blur(10px)', borderRadius: '8px' }}>
-            <pre>
-                {`Hello,
-This is Vishal, 
-    I'm a Web Developer.`}
-            </pre>
+            <p id='fuck'>
+                Hello!,<br/> This is Vishal, <br/>  I'm a Web Developer.
+            </p>
 
             {/* Social Media Icons */}
             <div className="social-icons" style={{ margin: '20px 0' }}>
