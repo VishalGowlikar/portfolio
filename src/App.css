@@ -138,6 +138,8 @@ body, html {
   height: 30px;
   margin: 5px;
   border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
 }
 
 /* About Section */
@@ -287,8 +289,9 @@ body, html {
   width: 100%;
   margin: 2rem 0;
   position: relative;
+  bottom: 486px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
   align-items: center;
 }
 
@@ -298,8 +301,9 @@ body, html {
   max-width: 600px;
   padding: 1.5rem;
   margin: 1rem 0;
-  background: rgba(255, 255, 255, 0.8); /* Slight transparency for overlap */
-  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   position: relative;
   transition: transform 0.3s ease, opacity 0.3s ease;
@@ -334,4 +338,8 @@ body, html {
   border-radius: 15px;
 
 
+}
+#header{
+  font-size: 20px;
+  
 }

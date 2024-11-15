@@ -23,8 +23,10 @@ function Projects() {
 
     return (
         <div id="projects" className="projects-section">
+            <span id="header">Projects</span>
             {projects.map((project, index) => (
                 <div key={index} className={`project project-${index + 1}`}>
+                    
                     <h3>{project.name}</h3>
                     <p><strong>Tools:</strong> {project.tools.join(', ')}</p>
                     <p><strong>Role:</strong> {project.myRole}</p>
