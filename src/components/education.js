@@ -5,6 +5,7 @@
 
 function Education() {
     return (
+    <>
         <div id="education" className="education-section">
             <h2>Education</h2>
             <div className="education-entry">
@@ -21,7 +22,10 @@ function Education() {
                 <p>Institution: Osmania University</p>
                 <p>Year: 2021</p>
             </div>
+            
         </div>
+        
+    </>
     );
 }
 
