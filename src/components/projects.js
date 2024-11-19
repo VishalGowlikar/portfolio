@@ -31,8 +31,11 @@ function Projects() {
                     <p><strong>Tools:</strong> {project.tools.join(', ')}</p>
                     <p><strong>Role:</strong> {project.myRole}</p>
                     <p>{project.description}</p>
+                    
                 </div>
             ))}
+                <button className="buttonviewmore" > <a href="https://github.com/VishalGowlikar?tab=repositories"> VIEW MORE ---&gt; </a></button>
+
         </div>
     );
 }

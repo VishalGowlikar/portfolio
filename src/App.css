@@ -264,7 +264,7 @@ body, html {
   border-radius: 8px;
   padding: 1rem;
   margin-bottom: 1.5rem;
-  color: #e0e0e0;
+  color: black;
   transition: transform 0.3s ease;
 }
 
@@ -290,6 +290,7 @@ body, html {
   margin: 2rem 0;
   position: relative;
   bottom: 486px;
+  left: 32px;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
@@ -340,6 +341,31 @@ body, html {
 
 }
 #header{
-  font-size: 20px;
+  font-size: 40px;
+  position: relative;
+  bottom: 166px;
+  font-family: "Poppins",sans-serif;
+  font-weight: bolder;
+  right: 600px;
+
+}
+.buttonviewmore{
+  width: 400px;
+  height: 50px;
+  position: relative;
+  top:200px;
+  left:500px;
+  border-radius: 15px;
+  font-family: "Poppins",sans-serif;
+  font-weight: bolder;
+
+
+}
+.buttonviewmore:hover{
+  z-index: 10;
+  transform: scale(1.25);
+  opacity: 1;
+  color: #f5a623;
   
+
 }
