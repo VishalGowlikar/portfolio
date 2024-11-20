@@ -540,6 +540,7 @@ background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%);
     text-align: center;
     position: static;
     width: 90%;
+    left: 200px;
   }
 
   /* About Section */
