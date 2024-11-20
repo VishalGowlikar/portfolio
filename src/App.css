@@ -64,7 +64,7 @@ body, html {
 }
 
 .nav-links a:hover {
-  color: #f5a623;
+  color: black;
 }
 
 /* Main Content Section */
@@ -512,6 +512,7 @@ background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%);
     background-size: 200% 200%;
     animation: gradientAnimation 10s ease infinite;
     overflow-x: hidden; /* Prevent horizontal scroll */
+    font-family: Arial, Helvetica, sans-serif;
   
   }
 
@@ -555,6 +556,7 @@ background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%);
 
   #about h2 {
     font-size: 1.5rem;
+    
   }
 
   #about p {
@@ -563,11 +565,13 @@ background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%);
 
   /* Skills Section */
   #skills {
-    width: 90%;
+    width: 130%;
     margin: 1rem auto;
     padding: 1.5rem;
     font-size: 1.2rem;
     text-align: center;
+    position: relative;
+    right: 38px;
   }
 
   .skills-list {
@@ -608,9 +612,14 @@ background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%);
   .Links {
     font-size: 1.5rem;
     margin: 1rem auto;
-   
+    
     position: static;
     
+  }
+  #fuck{
+    align-items: center;
+    position: relative;
+    right: 52px;
   }
 
   /* Buttons */
@@ -628,6 +637,9 @@ background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%);
     margin: 2rem auto;
     font-size: 1rem;
     position: static;
+    background: rgb(255,27,0);
+background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%);
+    
   }
 
   .buttonviewmore:hover {
