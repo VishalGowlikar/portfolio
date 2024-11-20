@@ -539,8 +539,8 @@ background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%);
     margin: 1rem auto;
     text-align: center;
     position: relative;
-   
-    width: 101%;
+    top: 10px;
+    width: 102%;
     left: -62px;
   }
 
@@ -549,7 +549,7 @@ background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%);
     width: 90%;
     margin: 1rem auto;
     padding: 1.5rem;
-    
+    position: static;
     height: auto;
   }
 
@@ -609,8 +609,8 @@ background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%);
     font-size: 1.5rem;
     margin: 1rem auto;
    
-    position: relative;
-    top: 77px;
+    position: static;
+    
   }
 
   /* Buttons */
