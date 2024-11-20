@@ -538,9 +538,10 @@ background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%);
   .simple-box {
     margin: 1rem auto;
     text-align: center;
-    position: static;
-    width: 90%;
-    left: 200px;
+    position: relative;
+   
+    width: 101%;
+    left: -62px;
   }
 
   /* About Section */
