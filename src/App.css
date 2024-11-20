@@ -549,7 +549,7 @@ background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%);
     width: 90%;
     margin: 1rem auto;
     padding: 1.5rem;
-    position: static;
+    
     height: auto;
   }
 
@@ -608,7 +608,9 @@ background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%);
   .Links {
     font-size: 1.5rem;
     margin: 1rem auto;
-    position: static;
+   
+    position: relative;
+    top: 77px;
   }
 
   /* Buttons */
