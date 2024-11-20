@@ -495,62 +495,69 @@ background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%);
   transition:800ms ease all;
 }
 @media only screen and (max-width: 768px) {
+  /* General Reset for Mobile */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body, html {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* Navbar */
   .navbar {
     flex-direction: column;
-    gap: 0.4rem;
-    position: relative;
-    right: 193px;
-    
-
+    gap: 0.5rem;
+    align-items: center;
+    padding: 1rem;
+    position: static;
   }
 
   .nav-links {
-    flex-direction: row;
-    position: relative;
-    left: 90px;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: center;
   }
 
-   .simple-box  {
-    padding: 1rem;
-    margin: 1rem 0;
+  .nav-links a {
+    font-size: 1rem;
+  }
+
+  /* Simple Box */
+  .simple-box {
+    margin: 1rem auto;
     text-align: center;
-    position: relative;
-    left: -138px;
-    top: 305px;
-    width: 467px;
-    
-  }
-  #about{
-    position: relative;
-    left: -96px;
-    width: 351px;
-    height: 560px;
-    }
-  #skills{
-    position: relative;
-    left: -96px;
-    width: 351px;
-    height: 777px;
-}
-  #education{
-    position: relative;
-    left: 12px;
-    width: 391px;
-    height: 607px;
-
-  }
-  .education-image{
-    visibility: hidden;
+    position: static;
+    width: 90%;
   }
 
-  .primarybtn, .secondarybtn {
-    width: 100px;
-    height: 35px;
-    font-size: 0.9rem;
+  /* About Section */
+  #about {
+    width: 90%;
+    margin: 1rem auto;
+    padding: 1.5rem;
+    position: static;
+    height: auto;
   }
 
   #about h2 {
     font-size: 1.5rem;
+  }
+
+  #about p {
+    font-size: 1rem;
+  }
+
+  /* Skills Section */
+  #skills {
+    width: 90%;
+    margin: 1rem auto;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+    text-align: center;
   }
 
   .skills-list {
@@ -558,25 +565,85 @@ background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%);
     gap: 0.5rem;
   }
 
+  /* Education Section */
+  .education-section {
+    width: 90%;
+    margin: 1rem auto;
+    padding: 1.5rem;
+    position: static;
+  }
+
+  .education-image, .education-img {
+    display: none; /* Hide large images on mobile */
+  }
+
+  .education-entry {
+    margin-bottom: 1rem;
+  }
+
+  /* Projects Section */
+  .projects-section {
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+    position: static;
+  }
+
+  .project {
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  /* Links */
   .Links {
     font-size: 1.5rem;
-    position: relative;
-    bottom: 500px;
-    left: -110px;
+    margin: 1rem auto;
+    position: static;
   }
-.projects-section{
-  width: 100%;
-  margin: 2rem 0;
-  position: relative;
-  bottom: 555px;
-  left: -43px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.buttonviewmore{
-  position: absolute;
-        left: 66px;
-        top: 641px;
-}
+
+  /* Buttons */
+  .primarybtn, .secondarybtn {
+    width: 100px;
+    height: 35px;
+    font-size: 0.9rem;
+    margin: 0.5rem auto;
+  }
+
+  /* View More Button */
+  .buttonviewmore {
+    width: 80%;
+    height: 45px;
+    margin: 2rem auto;
+    font-size: 1rem;
+    position: static;
+  }
+
+  .buttonviewmore:hover {
+    transform: scale(1.1);
+  }
+
+  /* Contact Section */
+  #contact {
+    width: 90%;
+    padding: 1.5rem;
+    margin: 1rem auto;
+  }
+
+  #contact h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-form {
+    gap: 1rem;
+  }
+
+  .contact-form input {
+    padding: 0.5rem;
+  }
+
+  .contact-form button {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+  }
 }
