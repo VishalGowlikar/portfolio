@@ -1,4 +1,6 @@
 import './App.css';
+import './Appe.css';
+import ContactDetails from './components/contactDetails.js';
 import Navbar from './components/NavBar'
 import Info from './components/Info'
 import Links from './components/Links.js'
@@ -7,6 +9,8 @@ import Skills from './components/Skills.js';
 import Education from './components/education.js';
 import Projects from './components/projects.js';
 import EducationS from './components/EducationS.js';
+
+
 function App() {
   return (
     <div className="App">
@@ -33,6 +37,10 @@ function App() {
       <div>
         <Projects/>
       </div>
+      <div>
+        <ContactDetails/>
+      </div>
+      
     </div>
   );
 }

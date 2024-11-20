@@ -19,7 +19,7 @@ body, html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 @keyframes gradientAnimation {
@@ -35,16 +35,14 @@ body, html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1rem;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   border-radius: 8px;
-  position: absolute;
-  top: 5px;
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: black;
   font-family: "Poppins", sans-serif;
 }
@@ -52,8 +50,8 @@ body, html {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
-  font-family: "Poppins", sans-serif;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .nav-links a {
@@ -67,305 +65,128 @@ body, html {
   color: #f5a623;
 }
 
-/* Main Content Section */
-.content-section {
-  width: 100%;
+/* Responsive Main Content */
+.content-section, .education-section, #about, #contact {
+  width: 90%;
   max-width: 800px;
-  margin: 2rem 0;
-  padding: 1.5rem;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border-radius: 8px;
-  color: white;
-  font-size: 1.2rem;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Simple Box */
-.simple-box {
+  margin: 1.5rem auto;
   padding: 1rem;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   border-radius: 8px;
-  color: black;
-  font-weight: bolder;
-  font-size: 1.2rem;
-  text-align: left;
-  margin-bottom: 1.5rem;
-  position: relative;
-  top: 100px;
-  left: 300px;
-}
-
-.Links {
-  width: 100%;
-  padding: 1rem;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border-radius: 8px;
-  color: black;
-  font-weight: bold;
-  font-size: 2rem;
-  font-family: "Poppins", sans-serif;
-  text-align: left;
-  margin: 20px 0;
-  position: relative;
-  bottom: 300px;
-  right: 341px;
-}
-
-.primarybtn {
-  background-color: #004080;
-  color: white;
-  width: 100px;
-  height: 30px;
-  margin: 5px;
-  border-radius: 10px;
-  font-size: medium;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-weight: bold;
-}
-.primarybtn:hover{
-  background-color: white;
-  color: black;
-  transition: transform 0.3s ease;
-}
-
-.secondarybtn {
-  background-color: rgb(222, 69, 84);
-  width: 100px;
-  height: 30px;
-  margin: 5px;
-  border-radius: 10px;
-  font-family: "Poppins", sans-serif;
-  font-style: italic;
-}
-
-/* About Section */
-
-#about-image{
-  width: 30px;
-  height: 30px;
-}
-#about {
-  width: 100%;
-  max-width: 677px;
-  height: 400px;
-  padding: 2rem;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border-radius: 8px;
-  color: white;
-  font-size: 1.2rem;
   text-align: center;
+  color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  margin-top: 2rem;
-  position: relative;
-  right:215px;
 }
 
-#fuck {
-  padding-left: 100px;
-  font-family: 'Poppins', sans-serif;
-}
-
-#about h2 {
-  font-size: 2rem;
-  color: black;
-  font-weight: bolder;
-  margin-bottom: 1rem;
-}
-
-#about p {
-  font-size: 1.1rem;
-  color: #ddd;
-  line-height: 1.6;
-  font-family: "Poppins", sans-serif;
-}
-
-#skills {
-  padding: 3rem;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border-radius: 8px;
-  max-width: 800px;
-  margin: 2rem auto;
-  color: black;
-  text-align: center;
-  font-size: 30px;
-  font-weight: bolder;
-  font-family: 'Times New Roman', Times, serif;
-}
-
+/* Skills Section */
 .skills-list {
-  list-style: none;
-  padding: 0;
-  margin: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.skill-item {
+  flex: 1 1 45%;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+/* Responsive Projects Section */
+.projects-section {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
 }
 
-.skill-item {
-  padding: 0.5rem 1rem;
-  background: #6a5acd;
-  color: white;
-  border-radius: 8px;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 1.1rem;
-  animation: moveSkill 1s ease-in-out infinite;
-  transition: transform 1s ease;
-}
-
-.skill-item:hover {
-  background-color: #f5a623;
-  transform: translateY(10px);
-  border-radius: 100px;
-}
-
-@keyframes moveSkill {
-  0% { transform: translateX(-8px); }
-  50% { transform: translateY(10px); }
-  100% { transform: translateX(-8px); }
-}
-
-/* Education Section */
-.education-section {
-  width: 100%;
-  max-width: 1000px;
-  margin: 2rem 0;
-  padding: 1.5rem;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border-radius: 8px;
-  color: #fff;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  margin-right: 200px;
-  position: relative;
-  left: 200px;
-}
-
-.education-section h2 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-  text-align: center;
-  color: black;
-  font-family: 'Times New Roman', Times, serif;
-}
-
-.education-entry {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
-  padding: 1rem;
-  margin-bottom: 1.5rem;
-  color: black;
-  transition: transform 0.3s ease;
-}
-
-.education-entry:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-
-.education-entry h3 {
-  font-size: 1.5rem;
-  color: black;
-  font-size: 40px;
-}
-
-.education-entry p {
-  font-size: 1rem;
-  margin: 0.5rem 0;
-}
-
-/* Projects Section */
-.projects-section {
-  width: 100%;
-  margin: 2rem 0;
-  position: relative;
-  bottom: 486px;
-  left: 32px;
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-}
-
-/* Individual project styling */
 .project {
-  width: 80%;
+  flex: 1 1 100%;
   max-width: 600px;
-  padding: 1.5rem;
-  margin: 1rem 0;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  position: relative;
-  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* Offset each project slightly for overlap effect */
-.project-1 { transform: translateY(0px) translateX(0px); z-index: 3; }
-.project-2 { transform: translateY(-20px) translateX(-10px); z-index: 2; }
-.project-3 { transform: translateY(-40px) translateX(-20px); z-index: 1; }
-
-/* Hover effect to bring project to the front */
-.project:hover {
-  z-index: 10;
-  transform: scale(1.05);
-  opacity: 1;
+/* Buttons */
+.primarybtn, .secondarybtn, .buttonviewmore {
+  width: auto;
+  max-width: 200px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
 }
 
-.education-image {
-  height: 500px;
-  width: 502px;
-  position: relative;
-  right: 418px;
-  bottom: 527px;
-  opacity: 0.7;
-  border-radius: 20px;
-}.education-img{
-  position: relative;
-  left: 574px;
-  bottom: 309px;
-  width: 421px;
-  height: 400px;
-  border-radius: 15px;
-
-
+.primarybtn:hover {
+  background-color: white;
+  color: black;
 }
-#header{
-  font-size: 40px;
-  position: relative;
-  bottom: 166px;
-  font-family: "Poppins",sans-serif;
-  font-weight: bolder;
-  right: 600px;
 
+.secondarybtn:hover {
+  background-color: rgb(255, 89, 100);
 }
-.buttonviewmore{
-  width: 400px;
-  height: 50px;
-  position: relative;
-  top:200px;
-  left:500px;
-  border-radius: 15px;
-  font-family: "Poppins",sans-serif;
-  font-weight: bolder;
 
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #about {
+    text-align: center;
+    margin: 1rem auto;
+  }
+
+  #header {
+    font-size: 1.5rem;
+    text-align: center;
+    right: 0;
+    bottom: 0;
+  }
+
+  .education-section {
+    margin: 1rem auto;
+    text-align: center;
+    left: 0;
+  }
+
+  .projects-section {
+    flex-direction: column;
+  }
+
+  .project {
+    width: 100%;
+  }
+
+  #contact {
+    width: 100%;
+    margin: 1rem auto;
+  }
 }
-.buttonviewmore:hover{
-  z-index: 10;
-  transform: scale(1.25);
-  opacity: 1;
-  color: #f5a623;
-  
 
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1rem;
+  }
+
+  .nav-links {
+    gap: 0.5rem;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+  }
+
+  .skill-item {
+    flex: 1 1 100%;
+    font-size: 0.9rem;
+  }
+
+  .buttonviewmore {
+    width: 100%;
+    padding: 0.5rem;
+  }
 }
