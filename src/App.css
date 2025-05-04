@@ -13,7 +13,7 @@ body, html {
 
 .App {
   min-height: 100vh;
-  background: linear-gradient(135deg, #f5a623, #ff6347, #6a5acd);
+  background: linear-gradient(135deg, #52abe7, #43a7be, #6a5acd);
   background-size: 200% 200%;
   animation: gradientAnimation 10s ease infinite;
   display: flex;
